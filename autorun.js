@@ -41,7 +41,7 @@ function again() {
         run();
     } else {
         childProcess.exec(processKillCmd, (err) => {
-            console.log((err) ? "\033[31m[WARN]\033[0m " + "关闭子进程失败" : "关闭子进程成功");
+            console.log((err) ? "\033[31m[WARN]\033[0m " + "子进程关闭失败" : "子进程关闭成功");
             run();
         });
     };
