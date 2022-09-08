@@ -1,5 +1,7 @@
-# autorun
-基于node.js的定时程序运行脚本
+# AutoRun
+基于node.js的定时终端命令运行脚本.
+
+![AutoRun](https://user-images.githubusercontent.com/83176414/189032684-2bc414aa-2924-40e3-8752-0410ac5dce1a.png)
 
 使用`Map`键值对结构配置目标时间列表, 查找速度极快. 可自动根据当前时间来选择下一个目标时间, 自定义运行的命令, 可供`Map`键值对与`for...of`循环的学习参考. 
 
@@ -87,7 +89,10 @@ if (day == 5) {
 // ========== 自定义时间规则结束 ==========
 run();
 ~~~
-在`config.json`中配置`enabledebug`的值为`true`可以开启调试功能, 会把一些重要逻辑内变量的状态打印出来
+在`config.json`中配置`enabledebug`的值为`true`可以开启调试功能, 会把一些重要逻辑内变量的状态打印出来.
+
+![enabledebug](https://user-images.githubusercontent.com/83176414/189032720-1a96782d-7ab2-44f0-8570-5c3b5738e5ca.png)
+
 # 感言
 2022下半年开学时间疫情变严重了, 然后开始了一段网课. 有一次我用虚拟声卡放了一次晚自习铃声, 班主任认为这挺好, 于是想让我去找一个打铃的软件.
 
@@ -95,14 +100,18 @@ run();
 
 于是我想: **干脆写一个吧**.
 
-一开始我用`Python`写了一个运用大量if判断目标时间的脚本, 但是设置时间的方法很笨拙, 修改一个目标时间可能需要改大量的if条件. 
+一开始我用`Python`写了一个运用大量`if`判断目标时间的脚本, 但是设置时间的方法很笨拙, 修改一个目标时间可能需要改大量的`if`条件. 
 
-当时我就想到`JavaScript`的`Map`键值对非常好用, 然后我果断用`node.js`重写脚本, 于是有了`autorun`.
+当时我就想到`JavaScript`的`Map`键值对非常好用, 然后我果断用`node.js`重写脚本, 于是有了`AutoRun`.
 
 # 鸣谢
 
-感谢 某某Laba 不给我免费用, 打个铃也要付费. 他们不给我限制功能我就不会制作`autorun`, 多亏了它们我提升了我的编程技能. 
+感谢 某某Laba 不给我免费用, 打个铃也要付费. 他们不给我限制功能我就不会制作`AutoRun`, 多亏了它们我提升了我的编程技能. 
 
 感谢 [rpOne](https://github.com/rpOneawa) 纠正了用`JavaScript`的比较思维 写`Python`脚本的我.
 
+![不可能没看懂, 绝对不可能](https://user-images.githubusercontent.com/83176414/189031562-2a539376-f498-4370-9ff6-0f1b5e4e2629.png)
+
 感觉 [MisaLiu](https://github.com/MisaLiu) 解答了多出教程看不懂的`setTimeOut()`递归知识.
+
+![`setTimeOut()`递归知识](https://user-images.githubusercontent.com/83176414/189031660-2baf39e9-3414-473e-976a-20f64e237ce1.png)
