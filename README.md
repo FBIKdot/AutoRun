@@ -17,7 +17,7 @@
 ~~~
 在`config.json`配置运行的命令, 以下是配置目标命令为
 ~~~cmd
-mpv main.mp
+mpv main.mp3
 ~~~
 的示范: **请注意转义**
 ~~~json
