@@ -1,0 +1,20 @@
+{
+    "enabledebug":true,
+    "timeList":[
+        [7, [20, 45, 50]],
+        [8, [30, 40]],
+        [9, [20, 40]],
+        [10, [20, 30]],
+        [11, [10, 20]],
+        [12, [0]],
+        [14, [10, 50]],
+        [15, [0, 40, 50]],
+        [16, [30, 40]],
+        [17, [20]],
+        [19, [0]],
+        [22, [0]]
+    ],
+    "playCmd":"\"D:\\Program Files\\DAUM\\PotPlayer\\PotPlayerMini64.exe\" main.mp3",
+    "processKillCmd":"taskkill /F /IM PotPlayerMini64.exe /T",
+    "timeOut":60000
+}
