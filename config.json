@@ -12,9 +12,11 @@
         [16, [30, 40]],
         [17, [20]],
         [19, [0]],
+        [20, [0, 10]],
+        [21, [0, 10]],
         [22, [0]]
     ],
-    "playCmd":"\"D:\\Program Files\\DAUM\\PotPlayer\\PotPlayerMini64.exe\" main.mp3",
-    "processKillCmd":"taskkill /F /IM PotPlayerMini64.exe /T",
+    "playCmd":"mpv main.mp3",
+    "processKillCmd":"taskkill /F /IM mpv.com /T",
     "timeOut":60000
 }
