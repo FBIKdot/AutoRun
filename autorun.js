@@ -19,7 +19,7 @@ var timeList = new Map(config.timeList);
 var playCmd = config.playCmd;
 var processKillCmd = config.processKillCmd;
 var timeOut = config.timeOut;
-timeOut = (Number(timeOut) < 1000 || Object.is(Number(timeOut),NaN)) ? 1000 : Number(timeOut)
+timeOut = (Number(timeOut) < 1000 || Object.is(Number(timeOut),NaN)) ? 1000 : Number(timeOut);
 debugConsoleLog("timeList:", timeList);
 debugConsoleLog("timeOut:", timeOut);
 
