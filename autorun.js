@@ -19,7 +19,9 @@ var timeList = new Map(config.timeList);
 var playCmd = config.playCmd;
 var processKillCmd = config.processKillCmd;
 var timeOut = config.timeOut;
+timeOut = (Number(timeOut) < 1000 || Object.is(Number(timeOut),NaN)) ? 1000 : Number(timeOut)
 debugConsoleLog("timeList:", timeList);
+debugConsoleLog("timeOut:", timeOut);
 
 
 var targetTime;
@@ -87,10 +89,10 @@ function main() {
         m = now.getMinutes(),
         s = now.getSeconds();
     if (leftTime == 0) {
-        console.log("时间到");
+        console.log("时间到, 启动子进程");
         play();
-        console.log("子进程启动,脚本暂停" + (Number(timeOut) >= 1000) ? Number(timeOut) : 1000 + "毫秒");
-        setTimeout(again, (Number(timeOut) >= 1000 || Number(timeOut) == NaN) ? Number(timeOut) : 1000);
+        console.log("子进程启动,脚本暂停", timeOut, "毫秒");
+        setTimeout(again, timeOut);
     } else {
         let output = "现在是";
         output += (h < 10) ? "0" + h + ":" : h + ":";
