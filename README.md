@@ -17,15 +17,15 @@
 ~~~
 在`config.json`配置运行的命令, 以下是配置目标命令为
 ~~~cmd
-D:\Program Files\DAUM\PotPlayer\PotPlayerMini64.exe main.mp3
+mpv main.mp
 ~~~
-的示范: 请注意转义
+的示范: **请注意转义**
 ~~~json
-"playCmd":"\"D:\\Program Files\\DAUM\\PotPlayer\\PotPlayerMini64.exe\" main.mp3"
+"playCmd":"mpv main.mp3"
 ~~~
 在`config.json`配置关闭进程用的命令
 ~~~json
-"processKillCmd":"taskkill /F /IM PotPlayerMini64.exe /T"
+"processKillCmd":"taskkill /F /IM mpv.com /T"
 ~~~
 不需要的话可以设置为`false`.
 ~~~json
