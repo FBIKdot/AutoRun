@@ -63,7 +63,7 @@ node autorun.js
 ## 更多
 可以在源码中声明`run`函数与执行`run`函数的中间设置自定义时间规则. 
 
-星期的变量`day`已经声明好了, 星期一到天对应的值为`0~6`
+星期的变量`day`已经声明好了, 星期日为`0`, 星期一为`1`, 以此类推.
 
 以下为星期五特别时间设置, 星期六停止脚本, 星期天取消小时小于19的时间 的示范:
 ~~~js
@@ -72,14 +72,14 @@ function run() {
     main();
 };
 // ========== 自定义时间规则开始 ==========
-if (day == 4) {
+if (day == 5) {
     debugConsoleLog("星期五");
     timeList.set(15, [0, 50]);
     timeList.set(16, [0, 40]);
-} else if (day == 5) {
-    console.log("\033[31m[WARN]\033[0m" + "星期六,停止脚本");
 } else if (day == 6) {
-    debugConsoleLog("星期天");
+    console.log("\033[31m[WARN]\033[0m" + "星期六,停止脚本");
+} else if (day == 1) {
+    debugConsoleLog("星期日");
     for (let i = 0; i < 19; i++) {
         timeList.delete(i);
     };
