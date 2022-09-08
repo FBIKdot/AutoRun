@@ -1,5 +1,5 @@
 {
-    "enabledebug":true,
+    "enabledebug":false,
     "timeList":[
         [7, [20, 45, 50]],
         [8, [30, 40]],
