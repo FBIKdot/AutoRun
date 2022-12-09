@@ -98,7 +98,7 @@ function main() {
         output += m < 10 ? "0" + m + ":" : m + ":";
         output += s < 10 ? "0" + s : s;
         output += ",目标";
-        output += sh > 9 ? sh : "0" + sh + ":" + sm > 9 ? sm : "0" + sm + ",剩余" + leftTime + "min";
+        output += (sh > 9 ? sh : "0" + sh) + ":" + (sm > 9 ? sm : "0" + sm) + ",剩余" + leftTime + "min";
         console.log(output);
         setTimeout(main, leftTime > 1 ? 60000 : 1000);
     };
