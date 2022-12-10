@@ -27,7 +27,7 @@ debugConsoleLog("timeOut:", timeOut)
 
 nith = False
 now = time.localtime()
-day = now[6]+1
+day = now[6]
 
 
 def play():
