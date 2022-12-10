@@ -1,5 +1,5 @@
 # AutoRun
-基于 node.js / Python 的定时终端命令运行脚本.
+基于 Node.js / Python 的定时终端命令运行脚本.
 
 ![AutoRun](https://user-images.githubusercontent.com/83176414/189032684-2bc414aa-2924-40e3-8752-0410ac5dce1a.png)
 
@@ -89,7 +89,7 @@ if (day == 5) {
 // ========== 自定义时间规则结束 ==========
 run();
 ~~~
-在`config.json`中配置`enabledebug`的值为`true`可以开启调试功能, 会把一些重要逻辑内变量的状态打印出来.
+在`config.json`中配置`enabledebug`的值为`true`可以使`debugConsoleLog()`函数打印, 我在调试的时候会用到它. 我用它把一些重要逻辑内变量的状态在调试的时候打印出来.
 
 ![enabledebug](https://user-images.githubusercontent.com/83176414/189032720-1a96782d-7ab2-44f0-8570-5c3b5738e5ca.png)
 
@@ -102,11 +102,11 @@ run();
 
 一开始我用`Python`写了一个运用大量`if`判断目标时间的脚本, 但是设置时间的方法很笨拙, 修改一个目标时间可能需要改大量的`if`条件. 
 
-当时我想到`JavaScript`的`Map`键值对非常好用, 然后我用`node.js`重写脚本, 于是有了`AutoRun`.
+当时我想到`JavaScript`的 `Map`键值 对可能适合被用在这里, 于是我用`Node.js`重写脚本, 然后就有了`AutoRun`.
 
 # 鸣谢
 
-感谢 某某Laba 不给我免费用, 打个铃也要付费. 他们不给我限制功能我就不会制作`AutoRun`, 多亏了它们我提升了我的编程技能. 
+感谢 某某Laba 不给我免费用, 单单打个铃竟然要付费. 他们不给我限制功能我就不会制作`AutoRun`, 多亏了它们的限制让我有了机会去提升我的编程技能. 
 
 感谢 [rpONE](https://github.com/rpOneawa) 大佬纠正了用`JavaScript`的比较思维 写`Python`脚本的我.
 
@@ -115,3 +115,5 @@ run();
 感觉 [MisaLiu](https://github.com/MisaLiu) 大佬解答了我在多处教程看不懂的`setTimeOut()`递归知识.
 
 ![`setTimeOut()`递归知识](https://user-images.githubusercontent.com/83176414/189031660-2baf39e9-3414-473e-976a-20f64e237ce1.png)
+
+感谢 Toby Fox 制作的音乐 "sans."
