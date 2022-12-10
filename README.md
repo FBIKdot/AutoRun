@@ -1,5 +1,5 @@
 # AutoRun
-基于node.js的定时终端命令运行脚本.
+基于 node.js / Python 的定时终端命令运行脚本.
 
 ![AutoRun](https://user-images.githubusercontent.com/83176414/189032684-2bc414aa-2924-40e3-8752-0410ac5dce1a.png)
 
@@ -108,10 +108,10 @@ run();
 
 感谢 某某Laba 不给我免费用, 打个铃也要付费. 他们不给我限制功能我就不会制作`AutoRun`, 多亏了它们我提升了我的编程技能. 
 
-感谢 [rpOne](https://github.com/rpOneawa) 纠正了用`JavaScript`的比较思维 写`Python`脚本的我.
+感谢 [rpONE](https://github.com/rpOneawa) 大佬纠正了用`JavaScript`的比较思维 写`Python`脚本的我.
 
 ![不可能没看懂, 绝对不可能](https://user-images.githubusercontent.com/83176414/189031562-2a539376-f498-4370-9ff6-0f1b5e4e2629.png)
 
-感觉 [MisaLiu](https://github.com/MisaLiu) 解答了我在多处教程看不懂的`setTimeOut()`递归知识.
+感觉 [MisaLiu](https://github.com/MisaLiu) 大佬解答了我在多处教程看不懂的`setTimeOut()`递归知识.
 
 ![`setTimeOut()`递归知识](https://user-images.githubusercontent.com/83176414/189031660-2baf39e9-3414-473e-976a-20f64e237ce1.png)
