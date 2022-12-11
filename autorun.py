@@ -30,12 +30,6 @@ now = time.localtime()
 day = now[6]
 
 
-def play():
-    os.system(playCmd)
-    print("子进程已结束")
-
-
-
 def getTargetTime():
     sh = None
     sm = None
@@ -58,7 +52,7 @@ def getTargetTime():
             debugConsoleLog("nith =", True)
             nith = True
     if sm == None:
-        print("\033[31m[WARN]\033[0m 目标时间均已过,脚本停止")
+        print("\033[31m[WARN]\033[0m 目标时间均已过, 脚本停止")
         exit()
     debugConsoleLog(
         f"target: {sh if sh > 9 else 0}{sh}: {sm if sm > 9 else 0}{sm}")
@@ -77,8 +71,8 @@ def main():
     h, m, s = time.localtime()[3:6]
     if leftTime == 0:
         print("时间到, 启动子进程")
-        play()
-        print("子进程启动,脚本暂停", timeOut, "秒")
+        os.system(playCmd)
+        print("子进程已结束, 脚本暂停", timeOut, "秒")
         time.sleep(timeOut)
         run()
     else:
@@ -95,10 +89,10 @@ def main():
             output += "0" + str(s)
         else:
             output += str(s)
-        output += ",目标"
+        output += ", 目标"
         output += (str(sh) if sh > 9 else "0" + str(sh)) + \
             ":" + (str(sm)if sm > 9 else "0" + str(sm)) + \
-            ",剩余" + str(leftTime) + "min"
+            ", 剩余" + str(leftTime) + "min"
         print(output)
         time.sleep(60 if leftTime > 1 else 1)
         main()

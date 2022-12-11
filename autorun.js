@@ -67,7 +67,7 @@ function getTargetTime() {
     };
     debugConsoleLog("sm =", sm);
     if (sm == undefined) {
-        console.log("\033[31m[WARN]\033[0m " + "目标时间均已过,脚本停止");
+        console.log("\033[31m[WARN]\033[0m " + "目标时间均已过, 脚本停止");
         process.exit();
     };
     debugConsoleLog("target: " + sh > 9 ? sh : "0" + sh + ":" + sm > 9 ? sm : "0" + sm);
@@ -90,15 +90,15 @@ function main() {
     if (leftTime == 0) {
         console.log("时间到, 启动子进程");
         play();
-        console.log("子进程启动,脚本暂停", timeOut, "毫秒");
+        console.log("子进程启动, 脚本暂停", timeOut, "毫秒");
         setTimeout(again, timeOut);
     } else {
         let output = "现在是";
         output += h < 10 ? "0" + h + ":" : h + ":";
         output += m < 10 ? "0" + m + ":" : m + ":";
         output += s < 10 ? "0" + s : s;
-        output += ",目标";
-        output += (sh > 9 ? sh : "0" + sh) + ":" + (sm > 9 ? sm : "0" + sm) + ",剩余" + leftTime + "min";
+        output += ", 目标";
+        output += (sh > 9 ? sh : "0" + sh) + ":" + (sm > 9 ? sm : "0" + sm) + ", 剩余" + leftTime + "min";
         console.log(output);
         setTimeout(main, leftTime > 1 ? 60000 : 1000);
     };
