@@ -1,4 +1,4 @@
-const childProcess = require("child_process");
+const runcmd = require("child_process").exec;
 const process = require("process");
 const fs = require("fs");
 
@@ -30,7 +30,7 @@ let day = now.getDay();
 
 
 function play() {
-    childProcess.exec(playCmd, () => {
+    runcmd(playCmd, () => {
         console.log("子进程已结束");
     });
 };
@@ -39,7 +39,7 @@ function again() {
     if (processKillCmd === false) {
         run();
     } else {
-        childProcess.exec(processKillCmd, err => {
+        runcmd(processKillCmd, err => {
             console.log(err ? "\033[31m[WARN]\033[0m " + "子进程关闭失败" : "子进程关闭成功");
             run();
         });
